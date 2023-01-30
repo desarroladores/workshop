@@ -1,0 +1,129 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(name='keywords' content='arthur workshop, sombreado')
+  link(rel='icon' href='imgs/icon.png')
+  link(rel='stylesheet' type='text/css' href='style/style.css')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65' crossorigin='anonymous')
+  title Arthur Workshop
+// Navbar
+nav
+  span.material-symbols-outlined.nav-icons.menu-btn(type='button')   menu  
+  a(href='/')
+    img(alt='arthur workshop' src='imgs/logo2.png')
+  div
+    span.material-symbols-outlined.nav-icons.shop-btn(type='button')  shopping_bag 
+    #nmb-p.number-p
+.responsive-nav_open
+  ul.nav-res-items
+    li.nav-res-items_li
+      a(href='/inicio') INICIO
+    li.nav-res-items_li
+      a(href='#productos') PRODUCTOS
+    li.nav-res-items_li
+      a(href='#nosotros') NOSOTROS
+    li.nav-res-items_li
+      a(href='#clientes') NUESTROS CLIENTES 
+#carrito.responsive-shop_open
+  ul.shop-res-items
+    p.empty-cart El carrito est&aacute; vac&iacute;o
+    button.pay-btn(onclick='location.href="/compra"') Comprar
+// Carousel
+#carouselExampleCaptions.carousel.slide(data-bs-ride='false')
+  .carousel-inner
+    .carousel-item.active
+      img.d-block.w-100(src='imgs/imgC3.png' alt='...')
+      .carousel-caption.d-md-block
+        h5(style="font-family: 'Rubik', sans-serif !important; font-size: 20px;") RED DE SOMBREO PARA TECHO
+        a.btn-car(type='button' href='#products') Saber m&aacute;s
+    .carousel-item
+      img.d-block.w-100(src='imgs/imgC1.jpeg' alt='...')
+      .carousel-caption.d-md-block
+        h5(style="font-family: 'Rubik', sans-serif !important; font-size: 20px;") RED DE SOMBREO PARA CORTINA
+        a.btn-car(type='button' href='#products') Saber m&aacute;s
+  button.carousel-control-prev(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='prev')
+    span.material-symbols-outlined.carousel-arrow arrow_back_ios
+    span.visually-hidden Previous
+  button.carousel-control-next(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='next')
+    span.material-symbols-outlined.carousel-arrow arrow_forward_ios
+    span.visually-hidden Next
+// sobre nosotros
+a.whatsapp(href='https://wa.link/x06qxk' target='_blank')
+  i.fa.fa-whatsapp.whatsapp-icon
+section#nosotros
+  .about-us
+    h1 Arthur Workshop
+    .questions
+      .question
+        h3 &iquest;Por qu&eacute; elegirnos?
+        p
+          | Nuestro producto es cuidado desde el momento cero, la fusi&oacute;n de las telas se realiza mediante la fusi&oacute;n de un sistema suizo
+          | que la hace est&eacute;ticamente &uacute;nica, el camuflaje de las telas sella las mismas para que finalmente puedas disfrutar con total
+          | confianza al aire libre en cuanto a su Camufladas Destino Nacional durabilidad. Y m&aacute;s
+      .question
+        h3 &iquest;Hacemos env&iacute;os?
+        p
+          | Lorem, ipsum dolor sit amet consectetur adipisicing elit.el camuflaje de las telas sella las mismas para que finalmente puedas disfrutar con total
+          | confianza al aire libre en cuanto a su Camufladas Destino Nacional durabilidad. Y m&aacute;s
+// productos
+section#productos
+
+
+
+  .product-container
+    .img-p-container
+      // cambia el descuento aca abajo (importante agregar "%" al final)
+      span.discount-p 32%
+      // aca abajo donde dice src='' tenes que meter el link de la imagen entre las comillas(podes cambiarlo donde dice src='y aca adentro lo pones'), la imagen debe estar en la carpeta products-imgs y a la hora de escribir el link debe tener el mismo nombre(p-negro en este caso) y formato (.jpg, .jpeg, .png) el del archivo y aca abajo
+      img(src='products-imgs/p-negro.png')
+    .info-p-container
+      // cambia el precio aca abajo
+      p.price-p $32000
+      // cambia el nombre del producto aca abajo
+      p.price-p_text Producto color Negro
+      //si queres agregar otro producto, procurá ponerle un id distinto porque si no va a tirar error(podes cambiarlo donde dice p.id='y aca adentro lo pones')
+      button.buy(p-id='1') A&ntilde;adir al carrito
+      // cambia el color aca abajo, esto de todas formas te va a servir a vos el cliente esto no lo ve
+    b.color(hidden='')
+      | Negro
+
+
+
+
+  .product-container
+    .img-p-container
+      span.discount-p 10%
+      img(src='products-imgs/p-blanco.png')
+    .info-p-container
+      p.price-p $35000
+      p.price-p_text Producto color blanco
+      button.buy(p-id='2') A&ntilde;adir al carrito
+    b.color(hidden='') blanco
+
+
+
+
+  .product-container
+    .img-p-container
+      span.discount-p
+      img(src='products-imgs/p-verde.png')
+    .info-p-container
+      p.price-p $38000
+      p.price-p_text Producto color Verde
+      button.buy(p-id='3') A&ntilde;adir al carrito
+      b.color(hidden='') verde
+// footer
+footer
+  .social-md
+    a(href='https://www.instagram.com/arthurworkshopp/')
+      img(src='imgs/ig.png')
+    a(href='https://wa.link/x06qxk')
+      img(src='imgs/wsp.png')
+// Scripts
+script(src='script/index.js')
+script(src='script/carrito.js')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4' crossorigin='anonymous')
