@@ -1,0 +1,192 @@
+
+/* ---------Pagina de compra--------- */
+body{
+    /* fae4cb */
+    background: #eee !important;
+    text-align: center;
+    display: grid;
+    gap: 50px;
+}
+.h6{
+    padding: 10px;
+    font-size: 25px !important;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid #48e;
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: 30px !important;
+}
+/* Products */
+#buy-products{
+    padding-top: 75px;
+    display: block;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-size: 25px !important;
+    color: #333;
+    max-width: 92%;
+    margin-bottom: 20px !important;
+    margin: auto;
+}
+.total-price{
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #666;
+}
+.total-price b{
+    color: #42712f;
+}
+.my-products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: baseline;
+    gap: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.my-p{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    outline:1.5px solid #222;
+    box-sizing: border-box;
+}
+.my-p img{
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+}
+.first-info{
+    display: flex;
+    gap: 35px;
+    padding: 10px 17.5px;
+    align-items: center;
+    justify-content: center;
+}
+.second-info{
+    font-size: 15px;
+    display: none;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 17.5px;
+    padding-left: 45px;
+    border-top: 0.5px dashed #666 ;
+}
+.expand_more{
+
+}
+.discount-p-text{
+    color: #a22 ;
+    display: inline;
+}
+.amount-span{
+
+}
+.size-span{
+
+}
+/* CONTACT ------ */
+.div-section{
+    text-align: center;
+    padding: 10px;
+    /* display: grid; */
+    /* gap: 10px; */
+}
+.div-section2{
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    gap: 15px;
+}
+form {
+    display: grid;
+    padding: 1em 2em;
+    gap:15px;
+    max-width: 500px;
+    margin: auto;
+    margin-top:20px ;
+}
+form input{
+    padding-inline-start: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #222;
+    border-radius:4px ;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+button[type="submit"]{
+    background-color: #48e;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius:8px ;
+}
+button[type="submit"]:hover{
+    background:#2960b3;
+}
+button[type="submit"]:active{color: #dedede;background-color: #37d;
+}
+.asdf{
+    font-size: 13px;
+    text-align: center;
+    margin: auto !important;
+    max-width: 450px;
+}
+.asdf2{
+    font-size: 16px;
+    text-align: center;
+    width: 280px;
+    margin: auto !important;
+    max-width: 550px;
+    color: #333;
+    font-weight: 500;
+}
+img[src="imgs/wa.link_tuaxel.png"]{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+.wsp-btn{
+    width: 200px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #248849;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    max-width: 200px;
+    margin: auto;
+    box-shadow: #999 0px 0px 10px;
+}
+.wsp-btn:hover{
+    background-color: #207a41;
+    color: #eee;
+    box-shadow: #888 0px 0px 10px;
+}
+@media screen and (min-width:1000px) {
+    h3{
+        font-size: 30px !important;
+        text-align: center;
+        margin-top: 60px !important;
+    }
+    .asdf2{
+        font-size: 20px;
+        margin: auto !important;
+        width: 550px;
+        color: #333;
+        font-weight: 500;
+    }
+}
